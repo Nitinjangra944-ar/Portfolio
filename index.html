@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nitin is a frontend developer in Haryana, India creating trustworthy, responsive, SEO-friendly websites for businesses, startups, and personal brands.">
+  <meta name="theme-color" content="#0f172a">
+  <title>Nitin — Trusted Frontend Developer in India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+  <header
+    class="site-header fixed inset-x-0 top-0 z-100 h-[var(--header-height)] transition-[background,box-shadow,backdrop-filter] duration-[220ms] ease-[var(--ease)]"
+    data-header>
+    <nav class="nav container flex min-h-[var(--header-height)] items-center justify-between gap-5 max-sm:gap-2.5"
+      aria-label="Primary navigation">
+      <a class="brand text-[clamp(1.5rem,3vw,2.35rem)] font-extrabold tracking-[-0.06em] leading-none" href="#home"
+        aria-label="Nitin home">nitin<span class="text-brand">.</span></a>
+
+      <ul class="nav-menu flex items-center gap-2 m-0 p-0 list-none max-sm:gap-1" id="primary-menu">
+        <li><a
+            class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)] max-[860px]:justify-center max-[860px]:min-h-[52px] max-[860px]:text-[1.05rem]"
+            href="#home">Home</a></li>
+        <li><a
+            class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)] max-[860px]:justify-center max-[860px]:min-h-[52px] max-[860px]:text-[1.05rem]"
+            href="#about">About</a></li>
+        <li><a
+            class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)] max-[860px]:justify-center max-[860px]:min-h-[52px] max-[860px]:text-[1.05rem]"
+            href="#services">Services</a></li>
+        <li><a
+            class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)] max-[860px]:justify-center max-[860px]:min-h-[52px] max-[860px]:text-[1.05rem]"
+            href="#work">Work</a></li>
+        <li><a
+            class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)] max-[860px]:justify-center max-[860px]:min-h-[52px] max-[860px]:text-[1.05rem]"
+            href="#process">Process</a></li>
+        <li><a
+            class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)] max-[860px]:justify-center max-[860px]:min-h-[52px] max-[860px]:text-[1.05rem]"
+            href="#contact">Contact</a></li>
+        <li class="mobile-only hidden max-[860px]:block"><a
+            class="drawer-cta relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] max-[860px]:justify-center max-[860px]:min-h-[52px] max-[860px]:text-[1.05rem] max-[860px]:mt-2 max-[860px]:bg-gradient-to-br max-[860px]:from-brand max-[860px]:to-brand-dark max-[860px]:text-white max-[860px]:shadow-glow"
+            href="#contact">Book a consultation</a></li>
+      </ul>
+
+      <div class="nav-actions flex items-center gap-3 max-sm:gap-2">
+        <button
+          class="theme-toggle relative inline-flex min-h-11 flex-none items-center gap-2.25 border border-line rounded-full bg-surface shadow-sm text-text font-extrabold p-1.5 pr-3 hover:-translate-y-0.5 transition-[transform,background,border-color] duration-[180ms] ease-[var(--ease)] max-sm:min-h-10 max-sm:p-1.5"
+          type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <span
+            class="theme-toggle-icon relative w-6 h-6 flex-none rounded-full bg-gradient-to-br from-[#f59e0b] to-[#fbbf24] shadow-[0_4px_14px_rgba(245,158,11,0.34)] transition-[background,box-shadow] duration-[220ms] ease-[var(--ease)]"
+            aria-hidden="true"></span>
+          <span class="theme-toggle-text text-[0.9rem] leading-none max-sm:hidden">Theme</span>
+        </button>
+        <a class="nav-cta inline-flex min-h-12 items-center justify-center gap-2.5 border-0 rounded-full font-extrabold px-5 py-3.25 bg-gradient-to-br from-brand to-brand-dark text-white shadow-glow hover:-translate-y-[3px] active:translate-y-0 active:scale-[0.98] transition-[transform,box-shadow,background] duration-[180ms] ease-[var(--ease)] will-change-transform max-[860px]:hidden"
+          href="#contact">Book a consultation</a>
+        <button
+          class="nav-toggle hidden w-12 h-12 flex-none flex-col items-center justify-center border border-line rounded-full bg-surface shadow-sm hover:-translate-y-0.5 transition-[transform,background,border-color] duration-[180ms] ease-[var(--ease)] max-[860px]:flex max-[860px]:z-102"
+          type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-menu">
+          <span
+            class="block w-5 h-[2px] my-[2.5px] rounded-full bg-text origin-center transition-[opacity,transform,width] duration-[180ms] ease-[var(--ease)]"></span>
+          <span
+            class="block w-5 h-[2px] my-[2.5px] rounded-full bg-text origin-center transition-[opacity,transform,width] duration-[180ms] ease-[var(--ease)]"></span>
+          <span
+            class="block w-5 h-[2px] my-[2.5px] rounded-full bg-text origin-center transition-[opacity,transform,width] duration-[180ms] ease-[var(--ease)]"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero section relative grid items-center overflow-hidden py-16 lg:min-h-screen lg:py-0 max-sm:py-12" id="home">
+      <!-- Enhanced Background Gradients -->
+      <div
+        class="hero-bg-primary absolute top-[-10%] right-[10%] w-[clamp(300px,50vw,700px)] aspect-square rounded-full bg-gradient-to-br from-[rgba(124,58,237,0.25)] to-[rgba(124,58,237,0.08)] blur-[60px] pointer-events-none animate-pulse"
+        aria-hidden="true" style="animation: float-slow 8s ease-in-out infinite;">
+      </div>
+      <div
+        class="hero-bg-secondary absolute bottom-[-5%] left-[5%] w-[clamp(250px,40vw,550px)] aspect-square rounded-full bg-gradient-to-br from-[rgba(245,158,11,0.15)] to-[rgba(124,58,237,0.08)] blur-[50px] pointer-events-none"
+        aria-hidden="true" style="animation: float-slow 10s ease-in-out infinite; animation-delay: 1s;">
+      </div>
+
+      <!-- main content  -->
+      <div
+        class="container hero-grid grid grid-cols-[1.2fr_0.8fr] items-center gap-[clamp(40px,6vw,100px)] max-lg:grid-cols-1 lg:gap-20 lg:py-28 max-sm:gap-6 max-sm:py-6">
+        <!-- Left: Content Section -->
+        <div class="hero-copy reveal space-y-8">
+          <!-- Eyebrow Badge -->
+    
+
+          <!-- Main Heading -->
+          <div class="space-y-4">
+            <h1
+              class="m-0 text-text text-[clamp(2.8rem,6vw,5.5rem)] font-extrabold tracking-[-0.09em] leading-[1.1] lg:leading-[1.15]">
+              Hi, I'm <span
+                class="bg-gradient-to-r from-brand via-brand to-[#a78bfa] bg-clip-text text-transparent">Nitin</span>
+            </h1>
+            <h2
+              class="m-0 text-muted text-[clamp(1.3rem,4vw,2rem)] font-bold tracking-[-0.04em] leading-[1.2] lg:leading-[1.3]">
+              Frontend Developer Creating High-Converting Websites
+            </h2>
+          </div>
+
+          <!-- Description -->
+          <p class="max-w-[620px] text-muted text-[clamp(0.95rem,2vw,1.1rem)] leading-[1.8] font-medium">
+            I help businesses transform outdated, broken websites into modern, responsive digital experiences that build trust, engage visitors, and drive conversions. Specializing in <span class="text-text font-bold">user-focused design</span>,
+            <span class="text-text font-bold">mobile-first development</span>, and
+            <span class="text-text font-bold">SEO-optimized structure</span>.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3.5 pt-4 max-sm:w-full max-sm:gap-2.5">
+            <a class="btn btn-primary inline-flex min-h-14 items-center justify-center gap-2.5 border-0 rounded-full font-extrabold px-8 py-3.5 bg-gradient-to-br from-brand to-brand-dark text-white shadow-glow hover:-translate-y-1 hover:shadow-[0_24px_80px_rgba(124,58,237,0.4)] active:translate-y-0 active:scale-[0.98] transition-all duration-300 ease-[var(--ease)] will-change-transform max-sm:w-full max-sm:min-h-12 max-sm:px-5 group"
+              href="#contact">
+              <span>Start your project</span>
+              <span
+                class="transition-transform duration-300 ease-[var(--ease)] group-hover:translate-x-2 group-hover:scale-125">→</span>
+            </a>
+            <a class="btn btn-secondary inline-flex min-h-14 items-center justify-center gap-2.5 border-2 border-line rounded-full font-extrabold px-8 py-3.5 bg-transparent text-text hover:bg-[rgba(124,58,237,0.08)] hover:border-brand transition-all duration-300 ease-[var(--ease)] max-sm:w-full max-sm:min-h-12 max-sm:px-5 group"
+              href="assets/Nitin_Jangra_Premium_Resume.pdf" target="_blank" rel="noreferrer">
+              <span class="text-lg">📄</span>
+              <span>View my resume</span>
+            </a>
+          </div>
+
+          <!-- Stats Section with Enhanced Design -->
+          <div
+            class="grid grid-cols-3 gap-3 lg:gap-4 pt-8 lg:pt-12 border-t border-[rgba(124,58,237,0.15)] lg:max-w-[600px] max-sm:gap-2">
+            <div class="group cursor-pointer transition-all duration-300">
+              <div
+                class="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-brand group-hover:scale-110 transition-transform duration-300">
+                20+</div>
+              <p class="text-muted text-[clamp(0.85rem,2vw,0.95rem)] font-bold mt-1.5 leading-tight">
+                Projects<br />Completed
+              </p>
+            </div>
+            <div class="group cursor-pointer transition-all duration-300">
+              <div
+                class="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-brand group-hover:scale-110 transition-transform duration-300">
+                2+</div>
+              <p class="text-muted text-[clamp(0.85rem,2vw,0.95rem)] font-bold mt-1.5 leading-tight">
+                Years of<br />Experience
+              </p>
+            </div>
+            <div class="group cursor-pointer transition-all duration-300">
+              <div
+                class="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-brand group-hover:scale-110 transition-transform duration-300">
+                100%</div>
+              <p class="text-muted text-[clamp(0.85rem,2vw,0.95rem)] font-bold mt-1.5 leading-tight">
+                Mobile<br />Responsive
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Section -->
+        <div class="hero-card reveal relative w-full max-w-[480px] justify-self-end h-[580px] lg:max-h-[600px]" style="--delay: 150ms">
+          <!-- Main Portrait Container -->
+          <div class="relative w-full h-full rounded-[32px] lg:rounded-[40px] overflow-hidden border border-[rgba(124,58,237,0.2)] shadow-[0_20px_50px_-12px_rgba(124,58,237,0.15)]">
+            <!-- Gradient Background -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#e9d5ff] via-[#f3e8ff] to-[#fef3c7] dark:from-[#1e1b4b] dark:via-[#312e81] dark:to-[#0f172a] z-0">
+            </div>
+
+            <!-- Image -->
+            <img class="relative z-10 w-full h-full object-cover hero-card-img" src="assets/hiji.png"
+              alt="Nitin - Frontend Developer" width="500" height="600">
+
+            <!-- Overlay Accent -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.4)] via-transparent to-transparent z-20 pointer-events-none">
+            </div>
+
+            <!-- Glowing Border Effect -->
+            <div
+              class="absolute inset-0 rounded-[32px] lg:rounded-[40px] border-2 border-[rgba(255,255,255,0.16)] pointer-events-none z-30 opacity-30">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 z-40 hidden lg:flex flex-col items-center gap-2 animate-bounce"
+        style="animation: bounce 2s infinite;">
+        <span class="text-muted text-[0.85rem] font-bold">Scroll to explore</span>
+        <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section logos reveal py-8 lg:py-10 mt-10 lg:hidden" aria-label="Brands and project categories">
+      <div class="container logo-row flex flex-wrap items-center justify-center gap-3">
+        <span
+          class="border border-line rounded-full bg-surface text-muted text-[0.88rem] font-extrabold px-4.5 py-2.5 transition-[transform,color,background] duration-300 hover:bg-[rgba(124,58,237,0.08)] hover:text-text hover:-translate-y-1">Ather
+          · EV mobility brand</span>
+        <span
+          class="border border-line rounded-full bg-surface text-muted text-[0.88rem] font-extrabold px-4.5 py-2.5 transition-[transform,color,background] duration-300 hover:bg-[rgba(124,58,237,0.08)] hover:text-text hover:-translate-y-1">Bikaji
+          · Indian FMCG/snacks brand</span>
+        <span
+          class="border border-line rounded-full bg-surface text-muted text-[0.88rem] font-extrabold px-4.5 py-2.5 transition-[transform,color,background] duration-300 hover:bg-[rgba(124,58,237,0.08)] hover:text-text hover:-translate-y-1">Techside
+          · technology services</span>
+        <span
+          class="border border-line rounded-full bg-surface text-muted text-[0.88rem] font-extrabold px-4.5 py-2.5 transition-[transform,color,background] duration-300 hover:bg-[rgba(124,58,237,0.08)] hover:text-text hover:-translate-y-1">Startup
+          MVPs · early product launches</span>
+        <span
+          class="border border-line rounded-full bg-surface text-muted text-[0.88rem] font-extrabold px-4.5 py-2.5 transition-[transform,color,background] duration-300 hover:bg-[rgba(124,58,237,0.08)] hover:text-text hover:-translate-y-1">Local
+          businesses · service websites</span>
+      </div>
+      <p class="container brand-context max-w-[860px] mt-5.5 text-muted text-[0.98rem] font-bold text-center">
+        Experience includes website and interface work inspired by real business needs across electric mobility brands
+        like Ather, Indian consumer brands like Bikaji, technology teams like Techside, startup MVP launches, and local
+        service businesses that need a stronger online presence.
+      </p>
+    </section>
+
+    <section class="section" id="about">
+      <div
+        class="container split-layout grid grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] items-center gap-[clamp(40px,7vw,96px)] max-lg:grid-cols-1">
+        <div
+          class="media-card reveal relative w-[min(100%,480px)] justify-self-center border border-line rounded-lg bg-gradient-to-b from-[#ede9fe] to-[#ffffff] dark:from-[#1e1b4b] dark:to-[#0f172a] shadow-md p-5 max-sm:p-3.5 max-sm:w-full">
+          <img class="w-full max-h-[620px] object-cover object-top rounded-[24px]" src="assets/nitin.png"
+            alt="Nitin working on frontend interfaces" width="420" height="580">
+          <img
+            class="orbit-badge absolute right-[-38px] bottom-[34px] w-[150px] rounded-full bg-[#fff] dark:bg-[#0f172a] shadow-md animate-spin-slow max-sm:right-2.5 max-sm:bottom-2.5 max-sm:w-[110px]"
+            src="assets/circular-text.png" alt="" aria-hidden="true">
+        </div>
+        <div class="section-copy reveal" style="--delay: 100ms">
+          <p class="eyebrow m-0 mb-3.5 text-brand text-[0.78rem] font-extrabold tracking-[0.14em] uppercase">About Nitin
+          </p>
+          <h2 class="text-text text-[clamp(2.1rem,5vw,4.25rem)] font-extrabold tracking-[-0.075em] leading-[1.02]">
+            Your website is your first impression.</h2>
+          <p class="max-w-[680px] mt-6 m-0 text-muted text-[clamp(1rem,2vw,1.18rem)]">
+            Most businesses lose potential customers because their websites are outdated, confusing, or broken on mobile. I build professional, responsive websites that visitors trust and that actually convert leads.
+          </p>
+          <div class="feature-grid grid grid-cols-3 gap-5.5 mt-8.5 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-3">
+            <article
+              class="mini-card border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md">
+              <img class="w-[46px] h-[46px] object-contain rounded-[14px] bg-[rgba(124,58,237,0.08)] p-2"
+                src="assets/code-icon.png" alt="">
+              <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Clean development</h3>
+              <p class="m-0 text-muted">Semantic HTML, scalable CSS, JavaScript, React, accessible structure, and
+                maintainable code.</p>
+            </article>
+            <article
+              class="mini-card border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md">
+              <img class="w-[46px] h-[46px] object-contain rounded-[14px] bg-[rgba(124,58,237,0.08)] p-2"
+                src="assets/edu-icon.png" alt="">
+              <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">User-first content</h3>
+              <p class="m-0 text-muted">Clear headlines, trust signals, benefit-led sections, and direct calls to
+                action.</p>
+            </article>
+            <article
+              class="mini-card border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md">
+              <img class="w-[46px] h-[46px] object-contain rounded-[14px] bg-[rgba(124,58,237,0.08)] p-2"
+                src="assets/project-icon.png" alt="">
+              <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Launch-ready quality</h3>
+              <p class="m-0 text-muted">Mobile testing, performance checks, browser-friendly layouts, and practical
+                launch support.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="services">
+      <div class="container">
+        <div class="section-heading reveal max-w-[760px] mx-auto text-center">
+          <p class="eyebrow m-0 mb-3.5 text-brand text-[0.78rem] font-extrabold tracking-[0.14em] uppercase">Services</p>
+          <h2 class="text-text text-[clamp(2.1rem,5vw,4.25rem)] font-extrabold tracking-[-0.075em] leading-[1.02]">
+            Website services tailored to your business needs.</h2>
+          <p class="max-w-[680px] mt-6 m-0 mx-auto text-muted text-[clamp(1rem,2vw,1.18rem)]">Whether you need a new website, a mobile fix, or a complete redesign, I provide clear, practical solutions that solve real business problems.</p>
+        </div>
+
+        <div class="cards-grid grid grid-cols-4 gap-5.5 mt-11.5 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 max-sm:grid-cols-1">
+          <article
+            class="service-card relative border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md group">
+            <img class="w-[46px] h-[46px] object-contain rounded-[14px] bg-[rgba(124,58,237,0.08)] p-2"
+              src="assets/web-icon.png" alt="">
+            <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Business website build</h3>
+            <p class="m-0 text-muted">Clean, responsive websites that explain your offer, build credibility, and guide
+              visitors to contact you.</p>
+            <a class="inline-flex items-center gap-2 mt-5.5 text-brand font-extrabold transition-[transform] duration-300"
+              href="#contact">Plan my website
+              <span
+                class="transition-transform duration-[180ms] ease-[var(--ease)] group-hover:translate-x-1">→</span></a>
+          </article>
+          <article
+            class="service-card relative border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md group"
+            style="--delay: 80ms">
+            <img class="w-[46px] h-[46px] object-contain rounded-[14px] bg-[rgba(124,58,237,0.08)] p-2"
+              src="assets/ui-icon.png" alt="">
+            <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Website redesign</h3>
+            <p class="m-0 text-muted">Upgrade outdated pages with stronger layout, clearer copy, better mobile UX, and
+              modern visual trust.</p>
+            <a class="inline-flex items-center gap-2 mt-5.5 text-brand font-extrabold transition-[transform] duration-300"
+              href="#contact">Improve my
+              website <span
+                class="transition-transform duration-[180ms] ease-[var(--ease)] group-hover:translate-x-1">→</span></a>
+          </article>
+          <article
+            class="service-card relative border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md group"
+            style="--delay: 160ms">
+            <img class="w-[46px] h-[46px] object-contain rounded-[14px] bg-[rgba(124,58,237,0.08)] p-2"
+              src="assets/mobile-icon.png" alt="">
+            <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Mobile responsiveness</h3>
+            <p class="m-0 text-muted">Fix broken layouts, small text, overflow, spacing issues, and poor mobile
+              navigation.</p>
+            <a class="inline-flex items-center gap-2 mt-5.5 text-brand font-extrabold transition-[transform] duration-300"
+              href="#contact">Fix mobile issues
+              <span
+                class="transition-transform duration-[180ms] ease-[var(--ease)] group-hover:translate-x-1">→</span></a>
+          </article>
+          <article
+            class="service-card relative border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md group"
+            style="--delay: 240ms">
+            <img class="w-[46px] h-[46px] object-contain rounded-[14px] bg-[rgba(124,58,237,0.08)] p-2"
+              src="assets/graphics-icon.png" alt="">
+            <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Trust-focused UI</h3>
+            <p class="m-0 text-muted">Add polished sections, service cards, proof blocks, testimonials, FAQs, and
+              contact flows.</p>
+            <a class="inline-flex items-center gap-2 mt-5.5 text-brand font-extrabold transition-[transform] duration-300"
+              href="#contact">Build trust
+              online <span
+                class="transition-transform duration-[180ms] ease-[var(--ease)] group-hover:translate-x-1">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-heading reveal max-w-[760px] mx-auto text-center">
+          <p class="eyebrow m-0 mb-3.5 text-brand text-[0.78rem] font-extrabold tracking-[0.14em] uppercase">Recent work</p>
+          <h2 class="text-text text-[clamp(2.1rem,5vw,4.25rem)] font-extrabold tracking-[-0.075em] leading-[1.02]">
+            Real websites solving real business problems.</h2>
+          <p class="max-w-[680px] mt-6 m-0 mx-auto text-muted text-[clamp(1rem,2vw,1.18rem)]">From improving mobile experience to redesigning for credibility, these examples show how better design drives results.</p>
+        </div>
+
+        <div class="work-grid grid grid-cols-3 gap-5.5 mt-11.5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1">
+          <article
+            class="work-card reveal relative border border-line rounded-lg bg-surface-solid shadow-sm overflow-hidden transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md group">
+            <img
+              class="w-full h-[300px] object-cover transition-transform duration-[420ms] ease-[var(--ease)] group-hover:scale-1.06 max-sm:h-[240px]"
+              src="assets/phone.jpg" alt="Responsive web project preview">
+            <div class="work-content p-6">
+              <span class="text-brand text-[0.78rem] font-extrabold tracking-[0.12em] uppercase">Business website</span>
+              <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">From confusing to credible</h3>
+              <p class="m-0 text-muted">Restructured service information, added trust signals, improved call-to-action clarity, and made the mobile experience smooth.</p>
+            </div>
+          </article>
+          <article
+            class="work-card reveal relative border border-line rounded-lg bg-surface-solid shadow-sm overflow-hidden transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md group"
+            style="--delay: 80ms">
+            <img
+              class="w-full h-[300px] object-cover transition-transform duration-[420ms] ease-[var(--ease)] group-hover:scale-1.06 max-sm:h-[240px]"
+              src="assets/map.jpg" alt="Map based app interface preview">
+            <div class="work-content p-6">
+              <span class="text-brand text-[0.78rem] font-extrabold tracking-[0.12em] uppercase">Product design</span>
+              <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Mobile-first interface</h3>
+              <p class="m-0 text-muted">Fixed layout overflow, improved touch targets, reorganized navigation, and optimized card hierarchy for mobile use.</p>
+            </div>
+          </article>
+          <article
+            class="work-card reveal relative border border-line rounded-lg bg-surface-solid shadow-sm overflow-hidden transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md group"
+            style="--delay: 160ms">
+            <img
+              class="w-full h-[300px] object-cover transition-transform duration-[420ms] ease-[var(--ease)] group-hover:scale-1.06 max-sm:h-[240px]"
+              src="assets/edit.jpg" alt="Creative website preview">
+            <div class="work-content p-6">
+              <span class="text-brand text-[0.78rem] font-extrabold tracking-[0.12em] uppercase">Personal brand</span>
+              <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Professional portfolio</h3>
+              <p class="m-0 text-muted">Redesigned layout for clarity, added proof sections, improved visual hierarchy, and ensured mobile responsiveness.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="process">
+      <div class="container">
+        <div class="section-heading reveal max-w-[760px] mx-auto text-center">
+          <p class="eyebrow m-0 mb-3.5 text-brand text-[0.78rem] font-extrabold tracking-[0.14em] uppercase">Process</p>
+          <h2 class="text-text text-[clamp(2.1rem,5vw,4.25rem)] font-extrabold tracking-[-0.075em] leading-[1.02]">A straightforward approach to building websites that work.</h2>
+          <p class="max-w-[680px] mt-6 m-0 mx-auto text-muted text-[clamp(1rem,2vw,1.18rem)]">No unnecessary steps. Just clear planning, focused development, and thorough testing to launch a website that performs.</p>
+        </div>
+        <div class="process-grid grid grid-cols-3 gap-5.5 mt-11.5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1">
+          <article
+            class="process-step relative border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md">
+            <span
+              class="inline-grid w-11 h-11 place-items-center rounded-full bg-gradient-to-br from-brand to-brand-dark text-white font-extrabold">01</span>
+            <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Understand your users</h3>
+            <p class="m-0 text-muted">Clarify your audience, services, trust gaps, website goals, and the action
+              visitors should take.</p>
+          </article>
+          <article
+            class="process-step relative border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md"
+            style="--delay: 80ms">
+            <span
+              class="inline-grid w-11 h-11 place-items-center rounded-full bg-gradient-to-br from-brand to-brand-dark text-white font-extrabold">02</span>
+            <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Plan clear sections</h3>
+            <p class="m-0 text-muted">Build a simple page flow: introduction, services, proof, process, FAQs, and
+              contact.</p>
+          </article>
+          <article
+            class="process-step relative border border-line rounded-md bg-surface-solid shadow-sm p-6 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] will-change-transform hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md"
+            style="--delay: 160ms">
+            <span
+              class="inline-grid w-11 h-11 place-items-center rounded-full bg-gradient-to-br from-brand to-brand-dark text-white font-extrabold">03</span>
+            <h3 class="mt-4.5 mb-2 text-[1.15rem] tracking-[-0.03em] leading-1.2">Build and refine</h3>
+            <p class="m-0 text-muted">Develop the responsive website, test mobile behavior, improve performance, and
+              prepare files for launch.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div
+        class="container testimonial-layout grid grid-cols-[0.92fr_1.08fr] items-center gap-[clamp(40px,7vw,96px)] max-lg:grid-cols-1">
+        <div class="section-copy reveal">
+          <p class="eyebrow m-0 mb-3.5 text-brand text-[0.78rem] font-extrabold tracking-[0.14em] uppercase">Why clients
+            trust the approach</p>
+          <h2 class="text-text text-[clamp(2.1rem,5vw,4.25rem)] font-extrabold tracking-[-0.075em] leading-[1.02]">A
+            website should make your business feel credible before the visitor contacts you.</h2>
+          <p class="max-w-[680px] mt-6 m-0 text-muted text-[clamp(1rem,2vw,1.18rem)]">
+            Every section is written and designed to reduce doubt: clear positioning, readable service details,
+            responsive design, visible contact options, social proof, FAQs, and a professional first impression.
+          </p>
+          <div class="stats-grid grid grid-cols-3 gap-3 mt-9.5 max-sm:grid-cols-1 max-sm:gap-2">
+            <div class="border border-line rounded-md bg-surface shadow-sm p-4.5"><strong
+                class="block text-[clamp(1.35rem,3vw,2rem)] leading-none">5+</strong><span
+                class="block mt-2 text-muted text-[0.88rem] font-bold">Major project types</span></div>
+            <div class="border border-line rounded-md bg-surface shadow-sm p-4.5"><strong
+                class="block text-[clamp(1.35rem,3vw,2rem)] leading-none">Clear</strong><span
+                class="block mt-2 text-muted text-[0.88rem] font-bold">User-first messaging</span></div>
+            <div class="border border-line rounded-md bg-surface shadow-sm p-4.5"><strong
+                class="block text-[clamp(1.35rem,3vw,2rem)] leading-none">100%</strong><span
+                class="block mt-2 text-muted text-[0.88rem] font-bold">Responsive delivery</span></div>
+          </div>
+        </div>
+        <div class="testimonial-stack reveal grid gap-4.5" style="--delay: 120ms">
+          <article
+            class="testimonial-card border border-line rounded-md bg-surface-solid shadow-sm p-7 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md">
+            <div class="stars text-accent tracking-[0.08em]" aria-label="5 star rating">★★★★★</div>
+            <p class="my-3.5 text-text text-[clamp(1.05rem,2vw,1.35rem)] font-bold tracking-[-0.035em] leading-[1.35]">
+              “Nitin made the website easier to understand and gave visitors a clearer reason to contact us.”</p>
+            <span class="text-muted font-extrabold">Startup-style project</span>
+          </article>
+          <article
+            class="testimonial-card border border-line rounded-md bg-surface-solid shadow-sm p-7 transition-[transform,box-shadow,border-color] duration-[220ms] ease-[var(--ease)] hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(124,58,237,0.25)] hover:shadow-md">
+            <div class="stars text-accent tracking-[0.08em]" aria-label="5 star rating">★★★★★</div>
+            <p class="my-3.5 text-text text-[clamp(1.05rem,2vw,1.35rem)] font-bold tracking-[-0.035em] leading-[1.35]">
+              “The redesign improved trust, readability, and the mobile experience without making the site
+              complicated.”</p>
+            <span class="text-muted font-extrabold">Service business website</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section pt-10" id="faq">
+      <div class="container">
+        <div class="section-heading reveal max-w-[760px] mx-auto text-center">
+          <p class="eyebrow m-0 mb-3.5 text-brand text-[0.78rem] font-extrabold tracking-[0.14em] uppercase">FAQs</p>
+          <h2 class="text-text text-[clamp(2.1rem,5vw,4.25rem)] font-extrabold tracking-[-0.075em] leading-[1.02]">
+            Questions before starting a website.</h2>
+        </div>
+        <div class="faq-list reveal grid max-w-[820px] gap-3.5 mt-10.5 mx-auto">
+          <details class="border border-line rounded-md bg-surface-solid shadow-sm px-5.5 py-5">
+            <summary class="cursor-pointer text-text font-extrabold outline-none">What kind of website is best for my
+              business?</summary>
+            <p class="pt-3.5 m-0 text-muted">Most businesses need a simple, trustworthy website with a clear
+              introduction, services, proof, FAQs, and
+              contact options.</p>
+          </details>
+          <details class="border border-line rounded-md bg-surface-solid shadow-sm px-5.5 py-5">
+            <summary class="cursor-pointer text-text font-extrabold outline-none">Can you improve my existing website
+              content?</summary>
+            <p class="pt-3.5 m-0 text-muted">Yes. I can rewrite weak content, improve section order, add trust-building
+              blocks, and make the message
+              easier for users to understand.</p>
+          </details>
+          <details class="border border-line rounded-md bg-surface-solid shadow-sm px-5.5 py-5">
+            <summary class="cursor-pointer text-text font-extrabold outline-none">Will the website work properly on
+              mobile?</summary>
+            <p class="pt-3.5 m-0 text-muted">Yes. Layout, typography, images, spacing, menus, forms, and tap targets are
+              planned for mobile, tablet,
+              and desktop.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section pb-20" id="contact">
+      <div
+        class="container contact-grid grid grid-cols-[1.15fr_1fr] items-start gap-[clamp(50px,8vw,120px)] max-lg:grid-cols-1">
+        <div class="section-copy reveal">
+          <p class="eyebrow m-0 mb-3.5 text-brand text-[0.78rem] font-extrabold tracking-[0.14em] uppercase">Get started</p>
+          <h2 class="text-text text-[clamp(2.1rem,5vw,4.25rem)] font-extrabold tracking-[-0.075em] leading-[1.02]">Ready for a website that actually works?</h2>
+          <p class="max-w-[680px] mt-6 m-0 text-muted text-[clamp(1rem,2vw,1.18rem)]">
+            Tell me about your business, what problem your website is having, and your timeline. I’ll recommend the best next step and provide honest guidance on scope and investment.
+          </p>
+          <div class="contact-points grid gap-2.5 mt-7">
+            <a class="text-muted font-bold hover:text-brand transition-colors duration-300"
+              href="mailto:nitin@gmail.com">nitin@gmail.com</a>
+            <span class="text-muted font-bold">Based in Haryana, India</span>
+            <span class="text-muted font-bold">Call or WhatsApp: +91 98127 81384</span>
+          </div>
+        </div>
+
+        <form
+          class="contact-form reveal border border-line rounded-md bg-surface-solid shadow-sm grid gap-4.5 p-[clamp(22px,4vw,34px)] max-lg:sticky max-lg:top-32"
+          style="--delay: 100ms" novalidate>
+          <label class="grid gap-2 text-text text-[0.9rem] font-extrabold">
+            <span>Name</span>
+            <input
+              class="w-full border border-line rounded-2xl bg-[#f8fafc] dark:bg-[#111827] text-text outline-none px-4 py-3.5 transition-[border-color,box-shadow,background] duration-[180ms] ease-[var(--ease)] focus:border-[rgba(124,58,237,0.62)] focus:bg-[#fff] dark:focus:bg-[#0f172a] focus:shadow-[0_0_0_4px_rgba(124,58,237,0.12)]"
+              type="text" name="name" placeholder="Your name" autocomplete="name" required>
+          </label>
+          <label class="grid gap-2 text-text text-[0.9rem] font-extrabold">
+            <span>Email</span>
+            <input
+              class="w-full border border-line rounded-2xl bg-[#f8fafc] dark:bg-[#111827] text-text outline-none px-4 py-3.5 transition-[border-color,box-shadow,background] duration-[180ms] ease-[var(--ease)] focus:border-[rgba(124,58,237,0.62)] focus:bg-[#fff] dark:focus:bg-[#0f172a] focus:shadow-[0_0_0_4px_rgba(124,58,237,0.12)]"
+              type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </label>
+          <label class="grid gap-2 text-text text-[0.9rem] font-extrabold">
+            <span>Website details</span>
+            <textarea
+              class="w-full border border-line rounded-2xl bg-[#f8fafc] dark:bg-[#111827] text-text outline-none px-4 py-3.5 transition-[border-color,box-shadow,background] duration-[180ms] ease-[var(--ease)] focus:border-[rgba(124,58,237,0.62)] focus:bg-[#fff] dark:focus:bg-[#0f172a] focus:shadow-[0_0_0_4px_rgba(124,58,237,0.12)] min-h-[150px] resize-y"
+              name="message"
+              placeholder="What's your business about? What's the main problem with your website? When do you need this done?"
+              required></textarea>
+          </label>
+          <p class="form-message" role="status" aria-live="polite"></p>
+          <button
+            class="btn btn-primary inline-flex min-h-12 items-center justify-center gap-2.5 border-0 rounded-full font-extrabold px-5 py-3.25 bg-gradient-to-br from-brand to-brand-dark text-white shadow-glow hover:-translate-y-[3px] active:translate-y-0 active:scale-[0.98] transition-[transform,box-shadow,background] duration-[180ms] ease-[var(--ease)] will-change-transform max-sm:w-full group"
+            type="submit">Send project details <span
+              class="transition-transform duration-[180ms] ease-[var(--ease)] group-hover:translate-x-1">→</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer border-t border-line pt-14 pb-7">
+    <div
+      class="container footer-grid grid grid-cols-[1.4fr_1fr_1fr_1fr] gap-7 items-start max-lg:grid-cols-2 max-sm:flex max-sm:flex-col max-sm:grid-cols-1 max-sm:text-center">
+      <div class="footer-brand">
+        <a class="brand text-[clamp(1.7rem,3vw,2.35rem)] font-extrabold tracking-[-0.06em] leading-none"
+          href="#home">nitin<span class="text-brand">.</span></a>
+        <p class="text-muted font-bold m-0 max-w-[330px] mt-3.5 max-sm:mx-auto">Frontend developer in Haryana, India
+          helping businesses and personal brands build clean, trustworthy
+          websites.</p>
+      </div>
+
+      <div class="footer-block grid gap-2.5 max-sm:justify-center">
+        <h3 class="m-0 mb-1 text-text text-[0.9rem] tracking-[0.12em] uppercase">location</h3>
+
+        <div class="w-40 h-40 overflow-hidden rounded-xl shadow-md max-sm:w-full max-sm:h-48">
+          <div class="w-full h-full" title="Near: Hisar">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1745.4228964189306!2d75.60532214133556!3d28.96229799613935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDU3JzQ0LjMiTiA3NcKwMzYnMjIuOCJF!5e0!3m2!1sen!2sin!4v1782060015595!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="w-full h-full" allowfullscreen loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+
+        <p class="text-muted font-bold m-0">Barwa , Bhiwani, Haryana (127045)</p>
+        <p class="text-muted font-bold m-0">Nearest city: Hisar</p>
+      </div>
+
+      <!-- contact -->
+      <div class="footer-block grid gap-2.5 max-sm:justify-center">
+        <h3 class="m-0 mb-1 text-text text-[0.9rem] tracking-[0.12em] uppercase">Contact</h3>
+        <a class="text-muted font-bold m-0 hover:text-brand transition-colors" href="tel:+919812781384">+91 98127
+          81384</a>
+        <a class="text-muted font-bold m-0 hover:text-brand transition-colors"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=nitinji844@gmail.com"
+          target="_blank">nitinji844@gmail.com</a>
+      </div>
+
+      <!-- social  -->
+      <div class="footer-block grid gap-2.5 max-sm:justify-center">
+
+        <h3 class="m-0 mb-1 text-text text-[0.9rem] tracking-[0.12em] uppercase">Social</h3>
+
+        <div class="social-links flex flex-wrap gap-2.5 max-sm:justify-center max-sm:gap-2" aria-label="Social contact links">
+
+          <a class=" w-10.5 h-10.5" href="https://www.instagram.com/nitin_jangra844?utm_source=qr&igsh=aWoxNmhkNmR0dmJj"
+            target="_blank" rel="noreferrer" aria-label="Instagram">
+            <img src="assets/instagram.png" alt="">
+          </a>
+
+          <a class=" w-10.5 h-10.5" href="https://www.facebook.com/share/1PVxv1qD9n/" target="_blank" rel="noreferrer"
+            aria-label="Facebook">
+            <img src="assets/communication.png" alt="">
+          </a>
+
+          <a class=" w-10.5 h-10.5" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <img src="assets/linkedin.png" alt="">
+          </a>
+
+          <a class=" hidden w-10.5 h-10.5" href="https://t.me/Nitinjangra844" target="_blank" rel="noreferrer"
+            aria-label="Telegram">
+            <img src="assets/telegram.png" alt="">
+          </a>
+
+          <a class=" w-10.5 h-10.5" href="https://wa.me/919812781383" target="_blank" rel="noreferrer"
+            aria-label="WhatsApp">
+            <img src="assets/whatsapp.png" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div
+      class="container footer-bottom flex items-center justify-between gap-4.5 mt-9.5 border-t border-line pt-5.5 max-sm:flex-col max-sm:text-center">
+      <p class="text-muted font-bold m-0">© 2026 Nitin. All rights reserved.</p>
+      <div class="footer-links flex items-center gap-2 m-0 p-0 list-none">
+        <a class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)]"
+          href="#work">Work</a>
+        <a class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)]"
+          href="#services">Services</a>
+        <a class="relative inline-flex min-h-11 items-center rounded-full text-muted text-[0.93rem] font-bold px-3.5 transition-[color,background] duration-[180ms] ease-[var(--ease)] hover:text-text hover:bg-[rgba(124,58,237,0.08)]"
+          href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-widget fixed right-5.5 bottom-5.5 z-120 max-sm:right-3.5 max-sm:bottom-3.5" data-chat-widget>
+    <section class="chat-panel" aria-label="Website help chat" hidden>
+      <div class="chat-header">
+        <div class="chat-brand">
+          <span class="chat-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 21v-4a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v4" />
+              <path d="M6 10a6 6 0 0 1 12 0" />
+              <path d="M8 7.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+            </svg>
+          </span>
+          <div>
+            <strong>Website chat</strong>
+            <span class="chat-status-text">Online &amp; ready to help</span>
+          </div>
+        </div>
+        <button class="chat-close" type="button" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-hint">Ask anything about websites, redesigns, performance, pricing, or contact details.</div>
+      <div class="chat-messages" aria-live="polite">
+        <div class="chat-message bot">Hi there! I’m here to help with your website questions.</div>
+      </div>
+      <form class="chat-form">
+        <input type="text" name="chat" placeholder="Ask a question or say hello..." autocomplete="off" aria-label="Chat message">
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <button
+      class="chat-button"
+      type="button" aria-label="Open website chat" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </svg>
+    </button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
